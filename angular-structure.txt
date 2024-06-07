@@ -1,0 +1,15 @@
+myApp/
+├── index.html
+├── app/
+│   ├── app.module.js
+│   ├── app.config.js
+│   ├── controllers/
+│   │   ├── home.controller.js
+│   │   ├── about.controller.js
+│   │   └── contact.controller.js
+│   └── views/
+│       ├── home.html
+│       ├── about.html
+│       └── contact.html
+└── styles/
+    └── style.css
