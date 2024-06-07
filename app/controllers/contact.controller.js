@@ -1,3 +1,5 @@
-angular.module('myApp').controller('ContactController', ['$scope', function($scope) {
-    $scope.message = "Contact Us here!";
-}]);
+export class ContactController {
+    constructor($scope) {
+        $scope.message = "Contact Us here!";
+    }
+  }

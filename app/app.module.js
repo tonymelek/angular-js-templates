@@ -1,13 +1,18 @@
 import angular from 'angular';
 import '../styles/style.css';
-// Import the configurations and controllers
+import './modules/home.module';
+
 import './app.config';
-import './controllers/home.controller';
-import './controllers/about.controller';
-import './controllers/contact.controller';
 
 
-angular.module('myApp');
+import {AboutController} from './controllers/about.controller';
+import {ContactController} from  './controllers/contact.controller';
+
+
+
+angular.module('myApp')
+.controller('ContactController', ContactController)
+.controller('AboutController',AboutController)
 
 
 
