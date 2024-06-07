@@ -1,15 +1,20 @@
-angular.module('myApp').config(['$routeProvider', function($routeProvider) {
+import home from './views/home.html'
+import about from './views/about.html'
+import contact from './views/contact.html'
+import 'angular-route';
+
+angular.module('myApp',['ngRoute']).config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'app/views/home.html',
+            template: home,
             controller: 'HomeController'
         })
         .when('/about', {
-            templateUrl: 'app/views/about.html',
+            template: about,
             controller: 'AboutController'
         })
         .when('/contact', {
-            templateUrl: 'app/views/contact.html',
+            template: contact,
             controller: 'ContactController'
         })
         .otherwise({
