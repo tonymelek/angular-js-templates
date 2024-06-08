@@ -1,6 +1,7 @@
 import angular from 'angular';
 import '../styles/style.css';
-import './modules/home.module';
+import './modules/homeModule/home.module';
+import './modules/fetchModule/fetch.module';
 
 import './app.config';
 

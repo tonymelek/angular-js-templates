@@ -1,8 +1,8 @@
-import { HomeController } from '../controllers/home.controller';
-import home from '../views/home.html';
-import { DataService } from '../services/data.service';
+import { HomeController } from './controllers/home.controller';
+import home from './views/home.html';
+import { DataService } from '../../services/data.service';
 
-angular.module('homeModule', [])
+angular.module('homeModule', ['fetchModule'])
     .controller('HomeController', HomeController)
     .service('DataService',DataService)
     .config(['$stateProvider', function ($stateProvider) {
@@ -14,4 +14,4 @@ angular.module('homeModule', [])
                 controllerAs: 'homeCtrl' 
             });
     }])
-//   .service('DataService', DataService);
+
